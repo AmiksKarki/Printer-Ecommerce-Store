@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Amiks Karki,Aayush Shrestha,Prashanna Sthapith,Anuja Rai" content="is-link-ton">
+    <meta name="About Us" content="HTML,CSS,Javascript">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>About Us</title>
+    <style>
+
+        .feedback {
+    background-color:rgb(229, 229, 219);
+    border-bottom: none;
+    width: fit-content;
+    margin: 10px auto;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
+    /* setting horizontal offset of shadow to 0, vertical offset to 5px, blur radius to 30px and giving black color to shadow with 30% opacity  */
+}
+body{
+    font-family:Frank Ruhl Libre,"PT Serif","Noto Serif","Noto Serif JP","Noto Serif KR","Noto Serif SC","Noto Serif TC",ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+}
+.feedback input {
+    border: 1px solid black;
+    /*width style colour */
+    height: 30px;
+    padding: 2px;
+    margin: 1vw;
+    width: 55vh;
+    color: #081C15;
+}
+
+.feedback form {
+    padding: 40px;
+}
+
+/* adding css to the submit button of feedback form */
+input[type="submit"] {
+    background-color: #262223;
+    color: white;
+    padding: 10px 20px 25px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /*changing arrow cursor to pointer indicating the clickability of item */
+    width: fit-content;
+}
+
+/* changing the effect of submit button while hovering */
+input[type="submit"]:hover {
+    background-color: #cccccc;
+    color: #262223;
+}
+.member-image{
+    text-align: center;
+}
+
+
+.flex1{
+    display: flex;
+}
+
+/*team part circile part of body starts
+*/
+.team-section {
+  background-color: #ecf0f1;
+  padding: 40px 20px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.team-member {
+  margin: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  margin-top: 10px;
+}
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <a href="Home.html">
+          <img src="../images/final logo.png" width="200px" height="200px" class="logo-img" alt="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/product.html">Products</a></li>
+            <li><a href="../html/research.html">Research</a></li>
+            <li><a href="../html/about.html">About Us</a></li>
+            <li class="search-bar">
+              <input type="text" placeholder="Search...">
+              <button type="submit">Search</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <!-- div containing all the elements except popups -->
+    <div id="about_us" style="width: 100%">
+        <!-- introduction part of about us page -->
+        <div class="aboutus-block flex" >
+            <div class="aboutus-content" style="display: flex;">
+                <div class="aboutus-header" style="width: 50%;">
+                    <h1 style=" color:maroon; margin-left: 40px; ">GREETINGS OF THE DAY!</h1>
+                    <div class="welcome" style="margin-left: 40px; font-size: 20px;">
+                        <p>We welcome you to is-link-ton printers</p>
+                        <p>We believe in linking of all manual producers and importers</p>
+                    </div>
+                </div>
+                <div class="aboutus-image" style=" height: 350px;width: 600px;">
+                    <img src="../images/team.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Founding story -->
+        <div class="founding flex" style="display: flex; height: 400px;">
+            <div class="left" style="width: 30%;height: 100%; padding-left: 300px;">
+                <h1 style=" color:maroon;">IS-LINK-TONS LEGACY <br> AND <br>FOUNDATION</h1>
+            </div>
+            <!-- defining the width of the division and then adding line spacing by line height pro;erty -->
+            <div class="right" style="width: 40%; height: 100%;line-height: 2;">
+                <p>Is-link-Ton established on 12th dec 2023.Upholding the reliable manufacture of best printers we ae willing to provide
+                    you required services and insurance.Over the year,Is-Link-Ton has evolved to meet the dynamic needs of the clients,expanding the services to
+                    include large format printing practices. We believe in quality and sincerity of our products and services. With our growing venture we aim for our
+                    customers satisfaction and feedbacks. Pledging you and ourselves for your compatiable purchase.
+                    We venture our users the best printing experience.
+                </p>         
+            </div>
+        </div>
+
+        <!-- our services -->
+        <div class="our_services">
+            <h1 style="margin-left: 40px;color:maroon;">OUR VALUES</h1>
+            <div class="services flex" style="margin-left: 40px;">
+                <div class="each_value" >
+                    <p>We provide you the proper guidance and guarantee of our product.</p>
+                </div>
+
+                <div class="each_service">
+                    <p>We ensure you proper set up of our product by any means </p>
+                </div>
+
+                <div class="each_service">
+                    <p>Providing you the memberships and linking your purchase.</p>
+                </div>
+
+                <div class="each_service">
+                    <p>Updating about the launch of new versions to enthuastic customer and institutes.</p>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- team section  -->
+        <div class="team">
+            <!--start of team code-->
+                        <h1 style="text-align: center; color: #081C15;">Meet our Team</h1>
+                        <div class="team-section">
+                            <div class="team-container">
+                                <div class="team-member">
+                                    <img src="../images/amiks.jpg" alt="Amix">
+                                    <h3>Amiks Karki</h3>
+                                    <a href="../html/amiks.html"><h3 style="color:darkslategray;">View Portfolio</h3></a>
+                                </div>
+                                <div class="team-member">
+                                    <img src="../images/formal pic .jpg" alt="Aayush">
+                                    <h3>Aayush Shrestha</h3>
+                                    <a href="../html/aayush.html"><h3 style="color:darkslategray;">View Portfolio</h3></a>
+                                </div>
+                                <div class="team-member">
+                                    <img src="../images/w.jpg" alt="Prashanna">
+                                    <h3>Prashanna Sthapith</h3>
+                                    <a href="../html/prashanna.html"><h3 style="color:darkslategray;">View Portfolio</h3></a>
+                                </div>
+                                <div class="team-member">
+                                    <img src="../images/anuja.jpg" alt="Anuja">
+                                    <h3>Anuja Rai</h3>
+                                    <a href="../html/anuja.html"><h3 style="color:darkslategray;">View Portfolio</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- explore more button Linking to the About Us page -->
+                 <!-- feedback form -->
+         </div>
+        <div class="feedback">
+            <form>
+                <h1>Provide Your Feedback</h1>
+                <label for="name">
+                    <p>Your name</p>
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">
+                    <p>Your email</p>
+                </label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="feedback">
+                    <p>Give us your feedback</p>
+                </label>
+                <textarea name="" id="feedback" cols="42" rows="8" placeholder="Your feedback" required></textarea>
+                <p><input type="submit" value="Submit" id="submitButton"></p>
+            </form>
+        </div>
+    </div>
+    <script>
+                                // JavaScript for form validation of the feedback form
+
+                    //adding click event listener to submit button
+                    document.getElementById("submitButton").addEventListener("click", function () {
+
+            //checking if the name and feedback fields are empty or not 
+            if (document.getElementById("name").value !== "" && document.getElementById("feedback").value !== "") {
+                let email = document.getElementById("email").value;//getting the value of email field and storing it in variable email
+                let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//defining the regular pattern for valid email address and storing it in variable emailPattern
+                if (emailPattern.test(email)) {
+                    alert("Thank you for your feedback!");//display this if the entered email address follows the regular pattern
+                } else {
+                    alert("Please enter a valid email address.");//display this if the entered email address doesn't follow the regular pattern
+                }
+            } else {
+                alert("Please fill out all the fields.");//display this if any one of the three fields is empty
+            }
+            })
+</script>
+
+    <!-- 1st footer part -->
+<footer class="footer-1">
+    <section class="product-subcategories">
+      <h2>Product</h2>
+      <ul>
+        <!-- linking all footer part to respective places-->
+        <li><a href="../html/product.html">Best Selling</a></li>
+        <li><a href="../html/product.html">Printer Model 1</a></li>
+        <li><a href="../html/product.html">Printer Model 2</a></li>
+        <li><a href="../html/product.html">Printer Model 3</a></li>
+      </ul>
+    </section>
+  
+    <section class="blog">
+      <h2>Blog</h2>
+      <ul>
+         <!--last part footer,linking all footer part to respective places-->
+        <p> Click the read more to explore about out blog.</p>
+        <li><a href="../html/blog.html">Read More</a></li>
+      </ul>
+    </section>
+  
+    <section class="research">
+      <h2>Research</h2>
+      <p>Read our research page to knw us more</p>
+      <!-- Link to the Research page -->
+      <a href="../html/research.html">Read More</a>
+    </section>
+  
+    <section class="about-us">
+      <h2>About Us</h2>
+      <p>We are Isl-ink-ton, a leading provider of innovative printing solutions...</p>
+      <!-- Link to the About Us page -->
+      <a href="../html/about.html">Learn More</a>
+    </section>
+    <section class="feedback-box">
+      <h2>Feedback</h2>
+      <textarea placeholder="Your feedback here..."></textarea>
+      <button>Submit</button>
+    </section>
+  </footer>
+  <!--copy right-->
+  </footer>
+    <footer class="footer-2">
+      <p>&copy;2023 Isl-ink-ton printers Pvt Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="Amiks Karki,Aayush Shrestha,Prashanna Sthapith,Anuja Rai" content="is-link-ton">
+    <meta name="Product" content="HTML,CSS,Javascript">
+    <title >Isl-ink-ton  </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/final logo.png" type="image/x-icon"> 
+    <style>
+
+body{
+    font-family:Frank Ruhl Libre,"PT Serif","Noto Serif","Noto Serif JP","Noto Serif KR","Noto Serif SC","Noto Serif TC",ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+
+}
+/* Stylings */
+.image{
+    width: 100%;
+}
+.Product-Container{
+    height: fit-content;
+    margin: 0 auto; /* 2 ta matra value cha bhane top buttom and left right huncha
+    4 ota value cha bhane top, right, buttom, left huncha*/
+}
+.dropdown{
+height: fit-content;
+display:flex;
+padding: 10px;
+width: fit-content;
+margin: auto;
+}
+.dropbox{
+    border-radius: 10px;
+    color: grey;
+    height: 40px;
+    margin:auto;
+}
+.product-page-title{
+    font-size: 25px;
+    font-weight: 500; /*The font-weight property sets how thick or thin characters in text should be displayed.*/
+    text-align: center;
+    padding:  0;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+.text-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.5;
+    margin: 8px;
+}
+
+.Product-type{
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* Products Section now */
+.products-page{
+    background: aliceblue;/*The background shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method. */
+    padding: 70px 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+ .text-title{
+    text-align: center;
+    width: 70%;
+    margin: 15px auto;
+}
+.product{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px auto;
+    /* margin top button and left right */
+    position: relative;/*The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)*/
+}
+
+.product-content{
+    width: 300px;
+    background:rgb(172, 166, 166);
+    cursor: pointer;
+}
+.product-image{
+    background:rgb(172, 170, 170);
+    padding-top: 50px;
+    width: 200px;
+    height: 150px;
+    margin: 0px auto;
+    border-radius: 100%;
+    transition: background 0.5s ease;   
+}
+.product-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.btn-cart, .btn-buy{
+    padding: 12px 0 ;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+
+}
+.btn-cart{
+    background: black;
+    color: white;
+}
+.btn-cart:hover{
+    background: rgb(103, 115, 103);
+}
+.btn-buy{
+    background: rgb(240, 128, 128);
+    color: black;
+}
+.btn-buy:hover{
+    background: rgb(103, 115, 103);
+}
+.product-info{
+    background: white;
+    padding: 10px;
+}
+.productinfo{
+    display: flex;
+    justify-content: space-between; /* spacing between the flex*/
+    align-items: center;
+}
+.rating img{
+    height: 10px;
+    width: 10px;
+    display: inline-block; /* horizontally displaying the stars */
+}
+.product-name{
+    color: black;
+    display: block;
+    text-decoration: none; /* removes underlie*/
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-price1, .product-price2{
+    padding-top: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-left: 0px;
+}
+.product-price1{
+    text-decoration: line-through;
+    color: green;
+}
+.product-image img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-image img {
+    /* makes only image transform */
+    transform: scale(1.8);
+}
+.product:hover .product-image{
+    background: rgb(68, 76, 68);
+}
+.product:hover .product-buttons{
+    opacity: 1;
+}
+.off-title{
+    background: rgb(55, 53, 53);
+    color: white;
+    display: inline-block;
+    padding:5px;
+    margin-left: 0px;
+    position:absolute ; /*positioned relative to the nearest ancestor*/
+    top: 0;/* position from top*/
+    left:0;/* position from left*/
+    writing-mode: vertical-lr; /*The writing-mode property specifies whether lines of text are 
+                                laid out horizontally or vertically.*/
+    transform:rotate(180deg) ;
+    z-index: 1; /* z-index property specifies the stack order(kun agadi kun paxadi) 
+                 of absolute positioned elements. negative values allowed*/
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.product-items{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+}
+.flex{
+    display: flex; 
+    background-color: rgb(253, 253, 253);
+    text-align: center;  
+    outline-width: 100px;
+    height: 930px;
+    cursor: pointer;
+    width:auto;
+    height: 100%;
+    padding-left: 40px;
+
+    overflow: hidden;
+} 
+.right
+{
+    padding-top: 10px;
+    margin-left: 10px;
+    width:50%;
+    height: 1000px;
+}
+
+.box1{
+   margin: 10px 0px 0px 10px;/*top right buttom left*/
+   height: 1000px;  
+   width: 50%;
+   background-image: url("../images/printer3.jpg");
+   background-size: cover;  /* adjusts the image size according to the div size and does not repeat the image */
+}
+.box1-p
+{
+    margin-top: 800px;
+    color: rgb(0, 0, 0);
+}
+
+.box2{
+   height: 50%;
+   width: 93%;
+   margin: 0px 10px 0px 0px;
+   background-color: darkgrey;
+   background-image: url("../images/printer2.jpg");
+   background-size: cover;
+}
+.box2-p
+{
+padding-top: 300px;
+color: rgb(255, 255, 255);
+}
+.orange{
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+    padding-left: 0px;
+    background-color:  rgb(253, 253, 253);
+ }
+.box3{
+    background-color: brown;
+   width: fit-content;
+   height: 98%;
+   overflow: hidden;
+   
+}
+.box2 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     -moz-transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     width: 100%;
+ }
+#submit{
+   padding: 10px 20px; 
+   margin-top: 10px;
+   background-color: black;
+   color: white;
+   border: 10px;
+   border-radius: 20px;
+   box-shadow: 2px 2px 2px 2px beige; /* horizontal, verticel, blurness, spreadness and color */
+   cursor: pointer;
+}
+
+
+#submit:hover {
+    background: rgb(103, 115, 103);
+    transition: all 0.2s ease;
+}
+.news{
+    background-color:  rgb(253, 253, 253);
+    height: fit-content;
+    padding-top: 5px;
+}
+.newsletter{
+    background-color: rgb(195, 195, 174);
+    padding: 10px;
+}
+.subscribe{
+    text-align: center;
+    color: brown;
+    padding: 10px;
+}
+.email
+{
+    height: 35px;
+    width: 300px;
+    border: hidden;
+    box-shadow: 2px  2px 2px 2px black;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.submit
+{
+    height: 35px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: rgb(58, 91, 119);
+    color: aliceblue;
+    cursor: pointer;
+}
+.form{
+text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="Home.html">
+        <img src="../images/final logo.png" width="200px" height="200px" class="logo-img" alt="logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../html/home.html">Home</a></li>
+          <li><a href="../html/blog.html">Blog</a></li>
+          <li><a href="../html/product.html">Products</a></li>
+          <li><a href="../html/research.html">Research</a></li>
+          <li><a href="../html/about.html">About Us</a></li>
+          <li class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <section>
+        <!-- Products page content goes here -->
+        <div class="products-page">
+          <div class="Product-Container">
+            <h1 class="product-page-title">Shop All Products</h1>
+            <p class="text-title">Discover Our Printers: Quality Printing to Your Fingertips</p>
+            <div class="dropdown">
+              <p>Items sorted by &nbsp; </p> 
+              <!-- non breaking space -->
+              <select name="drop" class="dropbox"> 
+                <option value="Most Popular">Special Offer</option>
+                <option value="Most Popular">Most Popular</option>
+                <option value="New">New Arrivals</option>
+                <option value="A-Z"> A-Z</option>
+                <option value="Price-h-l">Price (high to low)</option>
+                <option value="Price-l-h">Price (low to high)</option>
+              </select>
+            </div>
+              <div class="product-items">
+                <!-- product listings   -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/c8-984-2.png" alt="product image">
+                          
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">PrintLink Pro</a>
+                          <p>Experience seamless printing with PrintLink Pro. Fast, efficient, and reliable, this printer ensures top-notch quality for all your documents and images.
+                          </p>
+                          <p class="product-price1">Rs 10,000</p>
+                          <p class="product-price2">Rs 7,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">25% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer2.png" alt="product image" style="margin-top: 0px;">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">InnoPrint Elite</a>
+                          <p>Delivering professional-grade prints, this printer is equipped with advanced toner technology for sharp and vibrant results.</p>
+                          <p class="product-price1">Rs 15,000</p>
+                          <p class="product-price2">Rs 13,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">1% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/c8-132.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">SwiftPrint Plus</a>
+                          <p>SwiftPrint Plus is a high-performance printer from IsLinkTon, offering rapid and efficient printing capabilities. </p>
+                          <p class="product-price1">Rs 18,000</p>
+                          <p class="product-price2">Rs 14,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">15% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer1.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">QuickPrintX</a>
+                          <p>Speed meets efficiency with QuickPrintX. This printer is designed for those who need fast and reliable printing without sacrificing quality.</p>
+                          <p class="product-price1">Rs 9,000</p>
+                          <p class="product-price2">Rs 6,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">7% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+               </div>
+
+               <div class="product-items">
+                <!-- product listings   -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer11.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name"> InkJetElite</a>
+                          <p>Unleash your creativity with the InkJetElite. This printer is designed for superior color accuracy, making it perfect for photo enthusiasts and creative projects.</p>
+                          <p class="product-price1">Rs 19,000</p>
+                          <p class="product-price2">Rs 12,000</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">25% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer3.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name"> NanoPrintX</a>
+                          <p>Small size, big performance – that's NanoPrintX. This compact printer is perfect for tight spaces without compromising on printing capabilities.</p>
+                          <p class="product-price1">Rs 21,000</p>
+                          <p class="product-price2">Rs 12,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">27% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer4.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">ColorWave9</a>
+                          <p>Immerse yourself in a world of vibrant colors with ColorWave9. This printer is engineered for exceptional color reproduction, making your prints stand out.</p>
+                          <p class="product-price1">Rs 18,000</p>
+                          <p class="product-price2">Rs 12,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">20% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+                    <div class="product">
+                      <div class="product-content">
+                        <div class="product-image">
+                          <img class="image" src="../images/Printer5.png" alt="product image">
+                        </div>
+                        <div class="product-info">
+                          <div class="product-buttons">
+                            <button type="button" class="btn-cart">add to cart 
+                            </button>
+                            <button type="button" class="btn-buy">buy now
+                            </button>
+                          </div>
+                          <div class="productinfo">
+                            <h2 class="Product-type">Printing</h2>
+                            <div class="rating">
+                              <img class="image"src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/star-png.webp" alt="">
+                              <img class="image" src="../images/half star.png" alt="">
+                            </div>
+                          </div>
+                          <a href="#" class="product-name">TurboLaser6</a>
+                          <p>Turbocharge your printing tasks with TurboLaser6. This laser printer combines speed and precision, ensuring crisp text and smooth graphics every time.</p>
+                          <p class="product-price1">Rs 21,000</p>
+                          <p class="product-price2">Rs 19,500</p>
+                        </div>
+                        <div class="off-info">
+                          <h2 class="off-title">5% off</h2>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end of one product description -->
+               </div>
+
+               
+        </div>
+      </section>
+      <section>
+            <link  rel="stylesheet" href="../css/pro.css">
+           <div class="flex" >
+                <div class="box1" >
+                  <div class="box1-p">
+                    <h2>Best Selling</h2>
+                    <p>Click here to explore some of the best selling printers from Isl-ink-ton</p>
+                    <button type="submit" id="submit">Shop Now</button>
+                  </div>
+                </div>
+             <div class="right">
+                <div class="box2">
+                  <div class="box2-p">
+                    <h2>Best Inkjet</h2>
+                    <p>Click here to explore some of the best Inkjet printers from us.</p>
+                    <button type="submit" id="submit">Shop Now</button>
+                  </div>
+                </div>
+                
+                <div class="orange" >
+                    <div class="box3" id="slider">
+                    </div>
+                </div>
+             </div>
+           </div>
+        </section>
+        <section >
+          <div class="news">
+            <div class="newsletter">
+              <div class="subscribe">
+              <h2>Get exclusive access to new products, deals & surprise treats.</h2>
+              </div>
+              <div class="form">
+                <form name="newsletter" onsubmit="formvalidate()">
+                    <input type="email" name="email" class="email" placeholder="Enter your email address to subscribe">
+                    <input type="submit" name="clicksubmit" class="submit" value="Submit">
+                </form>
+                <p class="privacy">You are signing up to receive product updates and newsletters. By signing up, you are consenting to our <ins style="color: blue; cursor: pointer; ">privacy policy</ins> but you can opt out at any time.</p> <!-- inline css -->
+              </div>
+            </div>
+          </div>
+          <!-- javascript for image sliding in the buttom part -->
+          <script>
+            // variable storing image's path
+            var image=["../images/printer.jpg", "../images/printer2.jpg","../images/printer3.jpg"];
+            var index=0;
+            var imageDivSlider=document.getElementById("slider"); // created a variable to represent that particular division having id as slider
+            setInterval(slider,1000) //interval must be kept in terms of miliseconds
+            function slider()
+            {
+              if(index<image.length)
+              {
+                index++
+              }
+              else{
+                index=1;
+              }
+              imageDivSlider.innerHTML="<img src="+image[index-1]+">";
+            }
+          </script>
+          <!-- Javascript for validating the newsletter form -->
+          <script>
+            function formvalidate()
+            {
+              var email=document.forms["newsletter"]["email"].value; /*data from forms can be accessed easily in JS by
+               specifying the form’s name and the respective input field’s name*/
+              if( email=="")
+              {
+                alert("Please enter a valid email address to subscribe for newsletters!")
+              }
+              else{
+                alert("Thank you for subscribing. You will receive a mail from us shortly")
+              }
+            }
+          </script>
+        </section>
+        <!-- 1st footer part -->
+<footer class="footer-1">
+  <section class="product-subcategories">
+    <h2>Product</h2>
+    <ul>
+      <!-- linking all footer part to respective places-->
+      <li><a href="product.html">Best Selling</a></li>
+      <li><a href="product.html">Printer Model 1</a></li>
+      <li><a href="product.html">Printer Model 2</a></li>
+      <li><a href="product.html">Printer Model 3</a></li>
+    </ul>
+  </section>
+
+  <section class="blog">
+    <h2>Blog</h2>
+    <ul>
+       <!--last part footer,linking all footer part to respective places-->
+      <p> Click the read more to explore about out blog.</p>
+      <li><a href="blog.html">Read More</a></li>
+    </ul>
+  </section>
+
+  <section class="research">
+    <h2>Research</h2>
+    <p>Read our research page to knw us more</p>
+    <!-- Link to the Research page -->
+    <a href="research.html">Read More</a>
+  </section>
+
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>We are Isl-ink-ton, a leading provider of innovative printing solutions...</p>
+    <!-- Link to the About Us page -->
+    <a href="about.html">Learn More</a>
+  </section>
+  <section class="feedback-box">
+    <h2>Feedback</h2>
+    <textarea placeholder="Your feedback here..."></textarea>
+    <button>Submit</button>
+  </section>
+</footer>
+<!--copy right-->
+</footer>
+  <footer class="footer-2">
+    <p>&copy;2023 Isl-ink-ton printers Pvt Ltd. All rights reserved.</p>
+  </footer>
+  </body>
+</html>

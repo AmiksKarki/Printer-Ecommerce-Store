@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="Amiks Karki,Aayush Shrestha,Prashanna Sthapith,Anuja Rai" content="is-link-ton">
+    <meta name="Blog" content="HTML,CSS,Javascript">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" href="../images/final logo.png" type="image/x-icon" />
+    <title>Blog</title>
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+
+section {
+  margin-top: 50vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#svg {
+  min-height: 100vh;
+  background-image: url("../images/earth.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 2.5s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 522.83px;
+  stroke-dashoffset: 522.83px;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 284.192px;
+  stroke-dashoffset: 284.192px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 503.06px;
+  stroke-dashoffset: 503.06px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 585.33px;
+  stroke-dashoffset: 585.33px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2 {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 100% cover 50%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+      .hidden {
+        opacity: 0;
+        /* for blurring upon entry  */
+        filter: blur(5px);
+        /* moves the element off screen  */
+        transform: translateX(-100%);
+        transition: all 1s;
+      }
+
+      .show {
+        opacity: 1;
+        /* removes blur */
+        filter: blur(0);
+        /* bringes it back to its original position */
+        transform: translateX(0);
+      }
+
+      .staggered {
+        display: flex;
+        justify-content: center;
+      }
+
+      .stagger {
+        margin: 2vh;
+      }
+
+      /* incremental delay times for staggering effect  */
+      .stagger:nth-child(2) {
+        transition-delay: 200ms;
+      }
+
+      .stagger:nth-child(3) {
+        transition-delay: 400ms;
+      }
+
+      .stagger:nth-child(4) {
+        transition-delay: 600ms;
+      }
+
+      .stagger:nth-child(5) {
+        transition-delay: 800ms;
+      }
+
+      .stagger:nth-child(6) {
+        transition-delay: 1000ms;
+      }
+
+      .card {
+        width: 150px;
+        height: 100px;
+        /* Add shadows to create the "card" effect */
+        -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+        transition: 0.3s;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        -webkit-box-shadow: 0 0 15px #fff;
+        box-shadow: 0 0 15px #fff;
+      }
+
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
+
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background-color: transparent; position: absolute; width: 100%;">
+      <a href="Home.html">
+        <img src="../images/final logo.png" width="200px" height="200px" class="logo-img" alt="logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../html/home.html">Home</a></li>
+          <li><a href="../html/blog.html">Blog</a></li>
+          <li><a href="../html/product.html">Products</a></li>
+          <li><a href="../html/research.html">Research</a></li>
+          <li><a href="../html/about.html">About Us</a></li>
+          <li class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- svg diagram -->
+    <div id="svg">
+      <svg
+        id="logo"
+        width="330"
+        height="102"
+        viewBox="0 0 330 102"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M66.839 85.7039L66.8462 85.6927L66.8532 85.6814C69.4186 81.5958 70.692 77.0353 70.692 72.064C70.692 68.0959 69.7927 64.3414 67.9962 60.834C66.2997 57.3556 63.9348 54.4212 60.9144 52.0579C59.7749 51.1405 58.5806 50.3533 57.3331 49.6985C59.7822 48.2248 61.9173 46.4001 63.7187 44.2171C67.0499 40.1986 68.644 35.2116 68.644 29.44C68.644 24.7342 67.4608 20.4299 65.064 16.595C62.6347 12.7081 59.0326 9.72447 54.4073 7.59331C49.7261 5.35051 44.1794 4.284 37.856 4.284H5.85602H3.35602V6.784V96V98.5H5.85602H39.136C45.3906 98.5 50.933 97.4279 55.6885 95.19L55.6979 95.1856L55.7073 95.1811C60.4953 92.8792 64.2481 89.7342 66.839 85.7039ZM49.8049 61.1688L49.8189 61.1807L49.8331 61.1924C52.5979 63.4734 54.044 66.6091 54.044 70.912C54.044 75.1599 52.6616 78.209 50.0697 80.3917C47.4198 82.6232 43.5424 83.9 38.112 83.9H20.004V57.412H37.728C43.02 57.412 46.9568 58.748 49.8049 61.1688ZM48.133 22.1221L49.76 20.224L48.133 22.1221C50.4795 24.1334 51.74 26.9336 51.74 30.848C51.74 34.7624 50.4795 37.5626 48.133 39.5739C45.7483 41.6179 42.1833 42.812 37.088 42.812H20.004V18.884H36.832C42.1208 18.884 45.7606 20.0887 48.133 22.1221Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M129.736 86.528V84.028H127.236H98.504V6.784V4.284H96.004H84.356H81.856V6.784V96V98.5H84.356H127.236H129.736V96V86.528Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M156.152 93.3033L156.162 93.3092L156.172 93.315C163.395 97.3775 171.373 99.396 180.054 99.396C188.816 99.396 196.837 97.3797 204.064 93.315L204.074 93.3092L204.084 93.3033C211.302 89.1533 216.996 83.4109 221.14 76.1146C225.301 68.7875 227.354 60.5033 227.354 51.328C227.354 42.1527 225.301 33.8686 221.14 26.5414C216.996 19.244 211.298 13.5407 204.074 9.47482C196.847 5.32186 188.822 3.26001 180.054 3.26001C171.367 3.26001 163.385 5.32416 156.162 9.47487C148.935 13.5424 143.199 19.2879 138.973 26.6608L138.973 26.6608L138.968 26.6695C134.809 33.9929 132.754 42.2334 132.754 51.328C132.754 60.423 134.809 68.7009 138.962 76.1031L138.971 76.119L138.98 76.1347C143.207 83.4201 148.939 89.156 156.152 93.3033ZM195.574 80.2659L195.566 80.2706L195.558 80.2753C191.024 82.9327 185.878 84.284 180.054 84.284C174.234 84.284 169.04 82.9343 164.414 80.2705C159.893 77.6183 156.286 73.8331 153.589 68.8423C150.995 63.8827 149.658 58.068 149.658 51.328C149.658 44.4927 150.999 38.6843 153.586 33.821C156.284 28.8237 159.895 25.0344 164.422 22.3808C168.95 19.7264 174.138 18.372 180.054 18.372C185.97 18.372 191.158 19.7264 195.686 22.3808C200.207 25.0314 203.772 28.8136 206.383 33.8L206.395 33.8212L206.406 33.8421C209.07 38.7008 210.45 44.5013 210.45 51.328C210.45 58.0626 209.073 63.8718 206.398 68.8287L206.391 68.8423L206.383 68.856C203.777 73.8314 200.179 77.6123 195.574 80.2659Z"
+          stroke="white"
+          stroke-width="5"
+        />
+        <path
+          d="M305.557 33.7134L306.235 35.14H307.815H321.767H325.425L324.096 31.7317C320.587 22.7345 314.925 15.6913 307.12 10.6977C299.425 5.71981 290.582 3.26001 280.679 3.26001C271.992 3.26001 264.01 5.32416 256.787 9.47487C249.56 13.5424 243.824 19.2879 239.598 26.6608L239.598 26.6608L239.593 26.6695C235.434 33.9929 233.379 42.2334 233.379 51.328C233.379 60.4226 235.434 68.6631 239.593 75.9866L239.599 75.9967L239.605 76.0067C243.832 83.2921 249.564 89.028 256.777 93.1753L256.787 93.1812L256.797 93.187C264.02 97.2495 271.998 99.268 280.679 99.268C288.916 99.268 296.459 97.4285 303.254 93.7136L303.265 93.7075L303.277 93.7013C310.025 89.922 315.491 84.8209 319.641 78.4154L319.645 78.4087L319.65 78.402C323.792 71.9185 326.225 64.7944 326.944 57.0636L326.955 56.948V56.832V47.872V45.372H324.455H276.455H273.955V47.872V57.344V59.844H276.455H309.17C307.949 66.8902 305.024 72.4339 300.486 76.6281C295.379 81.3483 288.845 83.772 280.679 83.772C274.851 83.772 269.652 82.4612 265.026 79.8785C260.501 77.221 256.897 73.4728 254.206 68.5715C251.618 63.7017 250.283 57.9782 250.283 51.328C250.283 44.6744 251.619 38.9484 254.211 34.0769C256.906 29.0852 260.509 25.3471 265.019 22.7809L265.019 22.781L265.031 22.7741C269.659 20.1073 274.855 18.756 280.679 18.756C286.505 18.756 291.499 20.1077 295.748 22.7345L295.763 22.7432L295.777 22.7517C300.025 25.3006 303.282 28.9279 305.557 33.7134Z"
+          stroke="white"
+          stroke-width="5"
+        />
+      </svg>
+    </div>
+
+    <div id="content">
+      <section>
+        <h1>Transforming Lives and Businesses</h1>
+      </section>
+
+      <section class="hidden" style="margin-top: 10vh">
+        <div class="staggered">
+          <div class="stagger hidden">
+            <a href="#introduction"
+              ><div class="card">
+                <h4 class="container">Introduction</h4>
+              </div></a
+            >
+          </div>
+          <div class="stagger hidden">
+            <a href="#positive"
+              ><div class="card">
+                <h4 class="container">Positive Impact of Technology</h4>
+              </div></a
+            >
+          </div>
+          <div class="stagger hidden">
+            <a href="#negative"
+              ><div class="card">
+                <h4 class="container">Negative Impact of Technology</h4>
+              </div></a
+            >
+          </div>
+          <div class="stagger hidden">
+            <a href="#impact-daily-life"
+              ><div class="card">
+                <h4 class="container">Impact on Daily Life</h4>
+              </div></a
+            >
+          </div>
+          <div class="stagger hidden">
+            <a href="#impact-business"
+              ><div class="card">
+                <h4 class="container">Impact on Printing Industry</h4>
+              </div></a
+            >
+          </div>
+          <div class="stagger hidden">
+            <a href="#conclusion"
+              ><div class="card">
+                <h4 class="container">Conclusion</h4>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          Today's world is constantly changing due to technology, which affects
+          not only how businesses operate but also how we live our daily lives.
+          This blog will cover the benefits and drawbacks of technology, with a
+          focus on how it impacts both the personal and professional domains.
+        </p>
+      </section>
+      <section id="positive">
+        <h2>Positive Impact of Technology</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          Without a doubt, technology has resulted in many beneficial
+          developments. Many people's lives have been made better by
+          developments in healthcare, education, and communication. One example
+          of how smartphones have transformed global communication is in how we
+          communicate with one other. Automation and digitization have created
+          new opportunities, decreased expenses, and improved efficiency in the
+          business sector.
+        </p>
+      </section>
+      <section id="negative">
+        <h2>Negative Impact of Technology</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          All things have two sides, though, and technology is no different. The
+          negative elements of technology progress include privacy problems, the
+          digital divide, and the impact on the environment. Concerns over the
+          possible long-term impacts on mental health have been highlighted by
+          the over-reliance on screens, particularly among younger people.
+          Furthermore, there is a rising problem with automation that needs to
+          be addressed, job displacement. This is a problem that concerns
+          millions of people as machines threaten to take over their jobs and do
+          it better.
+        </p>
+      </section>
+      <section id="impact-daily-life">
+        <h2>Impact on Daily Life</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          Our everyday lives now involve technology on a full scale. Its impact
+          is evident in everything from the way our smartphones wake us up to
+          the AI-powered suggestions we see on our streaming services. Smart
+          home appliances and wearable technology have revolutionized our
+          lifestyles with their convenience. However, this has also affected
+          interpersonal relationships and mental wellness of people particularly
+          the youth.
+        </p>
+      </section>
+
+      <section id="impact-business">
+        <h2>Impact on Printing Industry</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          The introduction of digital printing technology has caused a radical
+          change in the printing sector. This evolution is characterized by cost
+          savings, enhanced adaptability, and efficiency advantages. While
+          automation reworks procedures, innovations like 3D printing have
+          upended traditional production. Notwithstanding these benefits,
+          problems like environmental sustainability and worker adaptation still
+          exist. In a fast evolving technical context, the printing sector must
+          strike a balance between embracing digitalization and tackling related
+          difficulties.
+        </p>
+      </section>
+
+      <section id="conclusion" style="margin-bottom: 50vh">
+        <h2>Conclusion</h2>
+        <p style="font-size: large; line-height: 1.5;">
+          In conclusion, even if there is no denying that technology has
+          improved our lives and businesses, it is still important to recognize
+          and deal with the drawbacks. A sustainable and inclusive future
+          depends on finding a balance between welcoming innovation and
+          minimizing any potential negative effects. This blog urges readers to
+          keep up to date, adjust appropriately, and take an active role in
+          determining how technology and society are going to interact in the
+          future.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy;2023 Islington printers Pvt Ltd. All rights reserved.</p>
+    </footer>
+    <script src="../javascript/app.js"></script>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+
+/* main header flex and all */
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34495e;
+  color: #fff;
+  padding: 20px;
+  height: 90px;
+  text-align: center;
+  width: auto;
+}
+input{
+   height: 45px;
+    width: 200px;
+    border: hidden;
+    box-shadow: 2px  2px 2px 2px black;
+    border-radius: 20px;
+  margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-img{
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-top:10px;
+}
+/* navigations alignment rekept */
+nav ul {
+  list-style-type: none; /* no bullets in the unordered list*/
+  margin: 25px;
+}
+
+/* navigation bar positon*/
+nav ul li { 
+  display: inline-block;/* Displays the list items in single line block horizontally*/
+  margin-right: 10px;
+}
+/* navigation bar  style */
+nav ul a:hover {
+  color: #cbacac;
+}
+nav ul a {
+  font-size: x-large;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: whitesmoke;
+  padding: 10px; /* Add padding for better spacing */
+}
+/* search button  part */
+nav ul li.search-bar button {
+  padding: 8px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+nav ul li.search-bar button:hover {
+  background-color: #2980b9;
+}
+
+/* first footer */
+.footer-1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.product-subcategories,
+.blog,
+.research,
+.about-us,
+.feedback-box {
+  flex: 1;
+  max-width: 250px;
+  margin-right: 20px;
+  background-color: #34495e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.product-subcategories h2,
+.blog h2,
+.research h2,
+.about-us h2,
+.feedback-box h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-subcategories ul,
+.blog ul,
+.research p,
+.about-us p,
+.feedback-box p {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-subcategories li,
+.blog li,
+.research p,
+.about-us p,
+.feedback-box li {
+  margin-bottom: 10px;
+}
+
+.product-subcategories a,
+.blog a,
+.research a,
+.about-us a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+textarea{
+  height: auto;
+    width: 200px;
+    border: hidden;
+    box-shadow: 2px  2px 2px 2px black;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+button{
+    height: 35px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: rgb(58, 91, 119);
+    color: aliceblue;
+    cursor: pointer;
+}
+/* copyright  footer */
+.footer-2 {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  border-top: 2px solid #2c3e50;
+  font-size: 14px;
+  overflow: hidden;
+}
+
